@@ -1,9 +1,3 @@
-{
-  /* <div className="absolute top-28 left-0 right-0 z-10 flex items-center justify-center">
-  POPUP
-</div> */
-}
-
 import { Canvas } from "@react-three/fiber";
 import { Suspense, useState } from "react";
 import Loader from "../components/Loader";
@@ -11,6 +5,7 @@ import Sky from "../models/Sky";
 import Bird from "../models/Bird";
 import Plane from "../models/Plane";
 import Island from "../models/Island";
+import HomeContent from "../components/HomeContent";
 
 function Home() {
   const [isRotating, setIsRotating] = useState(false);
@@ -51,6 +46,9 @@ function Home() {
 
   return (
     <section className="h-screen w-full relative">
+      <div className="absolute top-28 left-0 right-0 z-10 flex items-center justify-center">
+        {currentStage && <HomeContent currentStage={currentStage} />}
+      </div>
       <Canvas
         className={`h-screen w-full bg-transparent ${
           isRotating ? "cursor-grabbing" : "cursor-grab"
