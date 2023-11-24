@@ -10,10 +10,10 @@ import React from "react";
 
 function Home() {
   const [isRotating, setIsRotating] = useState(false);
-  const [currentStage, setCurrentStage] = useState<null | number>(null);
+  const [currentStage, setCurrentStage] = useState<null | number>(1);
 
   const adjustIslandForScreenSize = () => {
-    let islandScale = null;
+    let islandScale: Array<number> | null = null;
     const islandPosition = [0, -6.5, -43];
     const islandRotation = [0.1, 4.7, 0];
 
@@ -80,8 +80,8 @@ function Home() {
 
           <Plane
             isRotating={isRotating}
-            planeScale={planeScale}
-            planePosition={planePosition}
+            scale={planeScale}
+            position={planePosition}
             rotation={[0, 20, 0]}
           />
         </Suspense>

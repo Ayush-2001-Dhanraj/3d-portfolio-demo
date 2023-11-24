@@ -68,10 +68,12 @@ const Island = ({
       if (!isRotating) setIsRotating(true);
       // @ts-ignore
       islandRef.current.rotation.y += 0.01 * Math.PI;
+      rotationSpeed.current = 0.0125;
     } else if (e.key === "ArrowRight") {
       if (!isRotating) setIsRotating(true);
       // @ts-ignore
       islandRef.current.rotation.y -= 0.01 * Math.PI;
+      rotationSpeed.current = -0.0125;
     }
   };
 
@@ -106,7 +108,7 @@ const Island = ({
         case normalizeRotation >= 2.4 && normalizeRotation <= 2.6:
           setCurrentStage(2);
           break;
-        case normalizeRotation >= 4.25 && normalizeRotation <= 4.75:
+        case normalizeRotation >= 4.1 && normalizeRotation <= 4.75:
           setCurrentStage(1);
           break;
 
