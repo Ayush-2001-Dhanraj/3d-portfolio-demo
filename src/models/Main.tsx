@@ -16,7 +16,7 @@ import { a } from "@react-spring/three";
 import islandScene from "../assets/3d/island.glb";
 import React from "react";
 
-const Island = ({
+const Main = ({
   isRotating,
   setIsRotating,
   setCurrentStage,
@@ -169,4 +169,4 @@ const Island = ({
   );
 };
 
-export default Island;
+export default Main;

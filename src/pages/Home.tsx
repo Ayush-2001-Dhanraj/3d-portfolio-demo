@@ -5,11 +5,11 @@ import Loader from "../components/Loader";
 import Sky from "../models/Sky";
 import Bird from "../models/Bird";
 import Plane from "../models/Plane";
-import Island from "../models/Island.tsx";
 import HomeContent from "../components/HomeContent";
 import React from "react";
 import sakura from "../assets/sakura.mp3";
 import { soundoff, soundon } from "../assets/icons";
+import Main from "../models/Main";
 
 function Home() {
   const audioRef = useRef(new Audio(sakura));
@@ -85,7 +85,7 @@ function Home() {
 
           <Sky isRotating={isRotating} />
 
-          <Island
+          <Main
             scale={islandScale}
             position={islandPosition}
             rotation={islandRotation}
