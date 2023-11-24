@@ -5,7 +5,7 @@ import Loader from "../components/Loader";
 import Sky from "../models/Sky";
 import Bird from "../models/Bird";
 import Plane from "../models/Plane";
-import Island from "../models/Island";
+import Island from "../models/Island.tsx";
 import HomeContent from "../components/HomeContent";
 import React from "react";
 import sakura from "../assets/sakura.mp3";
