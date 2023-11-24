@@ -1,8 +1,9 @@
+// @ts-nocheck
 import { useEffect, useRef } from "react";
-// @ts-ignore
 import BirdScene from "../assets/3d/bird.glb";
 import { useAnimations, useGLTF } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
+import React from "react";
 
 function Bird() {
   const birdRef = useRef();

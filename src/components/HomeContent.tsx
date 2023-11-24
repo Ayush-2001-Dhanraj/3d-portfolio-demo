@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { arrow } from "../assets/icons";
+import React from "react";
 
 interface InfoBoxInterface {
   text: string;
