@@ -6,6 +6,7 @@ import Bird from "../models/Bird";
 import Plane from "../models/Plane";
 import Island from "../models/Island";
 import HomeContent from "../components/HomeContent";
+import React from "react";
 
 function Home() {
   const [isRotating, setIsRotating] = useState(false);
@@ -56,7 +57,7 @@ function Home() {
         camera={{ near: 0.1, far: 1000 }}
       >
         <Suspense fallback={<Loader />}>
-          <directionalLight position={[1, 1, 1]} intensity={2} />
+          <directionalLight position={[1, 1, 1]} intensity={1} />
           <ambientLight intensity={0.5} />
           <hemisphereLight
             color="#b1e1ff"

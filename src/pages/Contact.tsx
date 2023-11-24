@@ -1,19 +1,27 @@
 // @ts-nocheck
-import { useState } from "react";
+import { Suspense, useState } from "react";
 import emailjs from "@emailjs/browser";
+import { Canvas } from "@react-three/fiber";
+import Loader from "../components/Loader";
+import Fox from "../models/Fox";
 
 const Contact = () => {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
   const [isLoading, setIsLoading] = useState(false);
+  const [currentAnimation, setCurrentAnimation] = useState("idle");
 
   const handleChange = (e: any) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
-  const handleFocus = () => {};
-  const handleBlur = () => {};
+
+  const handleFocus = () => setCurrentAnimation("walk");
+
+  const handleBlur = () => setCurrentAnimation("idle");
+
   const handleSubmit = (e: any) => {
     e.preventDefault();
     setIsLoading(true);
+    setCurrentAnimation("hit");
 
     emailjs
       .send(
@@ -32,10 +40,14 @@ const Contact = () => {
         setIsLoading(false);
         // TODO: show success message
         // TODO: Hide an alert
-        setForm({ name: "", email: "", message: "" });
+        setTimeout(() => {
+          setCurrentAnimation("idle");
+          setForm({ name: "", email: "", message: "" });
+        }, 3000);
       })
       .catch((err) => {
         setIsLoading(false);
+        setCurrentAnimation("idle");
         // TODO: show error message
       });
   };
@@ -100,6 +112,20 @@ const Contact = () => {
             {isLoading ? "Sending ...." : "Send Message"}
           </button>
         </form>
+      </div>
+      <div className="lg:w-1/2 w-full lg:h-auto md:h-[500px] h-[350px]">
+        <Canvas camera={{ position: [0, 0, 5], fox: 75, near: 0.1, far: 1000 }}>
+          <directionalLight intensity={2.5} position={[0, 0, 1]} />
+          <ambientLight intensity={0.5} />
+          <Suspense fallback={<Loader />}>
+            <Fox
+              currentAnimation={currentAnimation}
+              position={[0.5, 0.35, 0]}
+              rotation={[12.6, -0.6, 0]}
+              scale={[0.5, 0.5, 0.5]}
+            />
+          </Suspense>
+        </Canvas>
       </div>
     </section>
   );
