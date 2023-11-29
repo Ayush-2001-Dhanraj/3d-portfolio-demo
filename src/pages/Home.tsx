@@ -10,6 +10,7 @@ import React from "react";
 import sakura from "../assets/sakura.mp3";
 import { soundoff, soundon } from "../assets/icons";
 import Main from "../models/Main";
+import { arrow } from "../assets/icons";
 
 function Home() {
   const audioRef = useRef(new Audio(sakura));
@@ -110,6 +111,13 @@ function Home() {
           alt="sound"
         />
       </div>
+      {!isRotating && (
+        <div className="flex gap-4 items-center text-center text-neutral-700 font-medium absolute top-[90%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
+          <img src={arrow} className="w-4 h-4 object-contain scale-x-[-1]" />
+          Drag or use arrow keys to travel
+          <img src={arrow} className="w-4 h-4 object-contain" />
+        </div>
+      )}
     </section>
   );
 }

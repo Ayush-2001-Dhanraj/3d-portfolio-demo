@@ -1,4 +1,4 @@
-import { shopify, tesla, sleeksky } from "../assets/images";
+import { rsvi, sleeksky, fsmk } from "../assets/images";
 import {
   car,
   contact,
@@ -21,18 +21,57 @@ import {
   summiz,
   threads,
   typescript,
+  reactNative,
+  tailwindcss,
+  cpp,
+  python,
 } from "../assets/icons";
 
 export const skills = [
   {
-    imageUrl: css,
-    name: "CSS",
+    imageUrl: reactNative,
+    name: "React Native",
     type: "Frontend",
+  },
+  {
+    imageUrl: react,
+    name: "React",
+    type: "Frontend",
+  },
+  {
+    imageUrl: nextjs,
+    name: "Next.js",
+    type: "Frontend",
+  },
+  {
+    imageUrl: redux,
+    name: "Redux",
+    type: "State Management",
+  },
+  {
+    imageUrl: typescript,
+    name: "TypeScript",
+    type: "Frontend",
+  },
+  {
+    imageUrl: nodejs,
+    name: "Node.js",
+    type: "Backend",
   },
   {
     imageUrl: express,
     name: "Express",
     type: "Backend",
+  },
+  {
+    imageUrl: mongodb,
+    name: "MongoDB",
+    type: "Database",
+  },
+  {
+    imageUrl: mui,
+    name: "MUI",
+    type: "Frontend",
   },
   {
     imageUrl: git,
@@ -50,104 +89,81 @@ export const skills = [
     type: "Frontend",
   },
   {
+    imageUrl: css,
+    name: "CSS",
+    type: "Frontend",
+  },
+  {
+    imageUrl: tailwindcss,
+    name: "TailwindCSS",
+    type: "Frontend",
+  },
+  {
     imageUrl: javascript,
     name: "JavaScript",
     type: "Frontend",
   },
   {
-    imageUrl: mongodb,
-    name: "MongoDB",
-    type: "Database",
+    imageUrl: python,
+    name: "Python",
+    type: "Programming Language",
   },
   {
-    imageUrl: mui,
-    name: "Material-UI",
-    type: "Frontend",
-  },
-  {
-    imageUrl: nextjs,
-    name: "Next.js",
-    type: "Frontend",
-  },
-  {
-    imageUrl: nodejs,
-    name: "Node.js",
-    type: "Backend",
-  },
-  {
-    imageUrl: react,
-    name: "React",
-    type: "Frontend",
-  },
-  {
-    imageUrl: redux,
-    name: "Redux",
-    type: "State Management",
-  },
-  {
-    imageUrl: typescript,
-    name: "TypeScript",
-    type: "Frontend",
+    imageUrl: cpp,
+    name: "C++",
+    type: "Programming Language",
   },
 ];
 
 export const experiences = [
   {
-    title: "Associate Software Developer (ReactJS)",
+    title: "Software Development Intern",
+    company_name: "RSVI",
+    icon: rsvi,
+    iconBg: "#fbc3bc",
+    date: "May 2021 - Jun 2021",
+    points: [
+      "Software Development: Led contributions for enhanced website functionality, ensuring seamless user experiences across multiple modules.",
+      "Web Design Excellence: Applied creative design principles, enhancing the company's online presence with a modern and engaging user interface.",
+      "Rapid Learning Curve: Actively engaged in a dynamic project environment, accelerating personal and professional growth through continuous learning and adaptation.",
+    ],
+  },
+  {
+    title: "Associate Software Developer",
     company_name: "SleekSky",
     icon: sleeksky,
     iconBg: "#accbe1",
     date: "July 2021 - Jan 2022",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Front-End Development: Engaged in ReactJS and Material-UI tasks at SleekSky, emphasizing continuous learning and growth.",
+      "Client-Centric Communication: Enhanced skills through direct client interactions, contributing to personal and professional development.",
+      "Tech Integration: Implemented Shopify and more, reinforcing a commitment to continuous learning in a dynamic environment.",
     ],
   },
   {
-    title: "Front End Developer (NextJS / TS)",
-    company_name: "Natty Hatty",
-    icon: tesla,
-    iconBg: "#fbc3bc",
-    date: "Jan 2022 - Sep 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Software Engineer - Web & Mobile (React Native / React / TS)",
+    title: "Software Engineer - Web & Mobile",
     company_name: "Funding Societies | FSMK",
-    icon: shopify,
+    icon: fsmk,
     iconBg: "#b7e4c7",
     date: "Nov 2022 - Sep 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Versatile Technology Exposure: Swiftly adapted to diverse tech environments at Funding Societies, handling React Native for mobile and React/TS for web projects. Demonstrated adaptability and a commitment to continuous learning.",
+      "Cross-Functional Collaboration: Engaged in various teams across web, mobile, and individual-led projects, emphasizing effective collaboration in a dynamic FinTech setting.",
+      "Incremental Growth: Contributed to average-sized teams, fostering both technical and team dynamic growth, marking a progression from previous experiences.",
     ],
   },
 ];
 
 export const socialLinks = [
   {
-    name: "Contact",
-    iconUrl: contact,
-    link: "/contact",
-  },
-  {
     name: "GitHub",
     iconUrl: github,
-    link: "https://github.com/YourGitHubUsername",
+    link: "https://github.com/Ayush-2001-Dhanraj",
   },
   {
     name: "LinkedIn",
     iconUrl: linkedin,
-    link: "https://www.linkedin.com/in/YourLinkedInUsername",
+    link: "https://www.linkedin.com/in/ayush-d-1759461a1/",
   },
 ];
 
@@ -155,10 +171,9 @@ export const projects = [
   {
     iconUrl: pricewise,
     theme: "btn-back-red",
-    name: "Amazon Price Tracker",
-    description:
-      "Developed a web application that tracks and notifies users of price changes for products on Amazon, helping users find the best deals.",
-    link: "https://github.com/adrianhajdin/pricewise",
+    name: "XR based Ecommerce App",
+    description: "XR - ",
+    link: "https://github.com/Ayush-2001-Dhanraj/xrEcommerce",
   },
   {
     iconUrl: threads,
