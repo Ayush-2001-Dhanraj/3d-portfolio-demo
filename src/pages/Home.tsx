@@ -11,6 +11,7 @@ import sakura from "../assets/sakura.mp3";
 import { soundoff, soundon } from "../assets/icons";
 import Main from "../models/Main";
 import { arrow } from "../assets/icons";
+import Tower from "../models/Tower";
 
 function Home() {
   const audioRef = useRef(new Audio(sakura));
@@ -31,13 +32,13 @@ function Home() {
 
   const adjustIslandForScreenSize = () => {
     let islandScale: Array<number> | null = null;
-    const islandPosition = [0, -6.5, -43];
+    const islandPosition = [0, -20, -43];
     const islandRotation = [0.1, 4.7, 0];
 
     if (window.innerWidth < 768) {
       islandScale = [0.9, 0.9, 0.9];
     } else {
-      islandScale = [1, 1, 1];
+      islandScale = [2, 2, 2];
     }
 
     return [islandScale, islandPosition, islandRotation];
@@ -86,7 +87,7 @@ function Home() {
 
           <Sky isRotating={isRotating} />
 
-          <Main
+          <Tower
             scale={islandScale}
             position={islandPosition}
             rotation={islandRotation}
@@ -94,6 +95,17 @@ function Home() {
             setIsRotating={setIsRotating}
             setCurrentStage={setCurrentStage}
           />
+
+          {/* island model */}
+
+          {/* <Main
+            scale={islandScale}
+            position={islandPosition}
+            rotation={islandRotation}
+            isRotating={isRotating}
+            setIsRotating={setIsRotating}
+            setCurrentStage={setCurrentStage}
+          /> */}
 
           <Plane
             isRotating={isRotating}
@@ -112,7 +124,7 @@ function Home() {
         />
       </div>
       {!isRotating && (
-        <div className="flex gap-4 items-center text-center text-neutral-700 font-medium absolute top-[90%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
+        <div className="flex gap-4 items-center text-center text-slate-200 font-medium absolute top-[90%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
           <img src={arrow} className="w-4 h-4 object-contain scale-x-[-1]" />
           Drag or use arrow keys to travel
           <img src={arrow} className="w-4 h-4 object-contain" />
