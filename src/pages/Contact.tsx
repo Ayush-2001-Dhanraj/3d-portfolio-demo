@@ -6,6 +6,8 @@ import Loader from "../components/Loader";
 import Fox from "../models/Fox";
 import useAlert from "../hooks/useAlert";
 import Alert from "../components/Alert";
+import { socialLinks } from "../constants";
+import { Link } from "react-router-dom";
 
 const Contact = () => {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
@@ -127,6 +129,19 @@ const Contact = () => {
             {isLoading ? "Sending ...." : "Send Message"}
           </button>
         </form>
+        <div className="flex justify-between mt-4">
+          {socialLinks.map((social) => {
+            return (
+              <Link to={social.link} key={social.name}>
+                <img
+                  src={social.iconUrl}
+                  alt={social.name}
+                  className="w-8 h-8 object-contain border-4 rounded-full"
+                />
+              </Link>
+            );
+          })}
+        </div>
       </div>
       <div className="lg:w-1/2 w-full lg:h-auto md:h-[500px] h-[350px]">
         <Canvas camera={{ position: [0, 0, 5], fox: 75, near: 0.1, far: 1000 }}>
