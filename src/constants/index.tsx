@@ -1,9 +1,6 @@
 import { rsvi, sleeksky, fsmk } from "../assets/images";
 import {
-  car,
-  contact,
   css,
-  estate,
   express,
   git,
   github,
@@ -14,17 +11,18 @@ import {
   mui,
   nextjs,
   nodejs,
-  pricewise,
   react,
   redux,
-  snapgram,
-  summiz,
-  threads,
   typescript,
   reactNative,
   tailwindcss,
   cpp,
   python,
+  notes,
+  food,
+  dog,
+  work,
+  airbnb,
 } from "../assets/icons";
 
 export const skills = [
@@ -169,50 +167,43 @@ export const socialLinks = [
 
 export const projects = [
   {
-    iconUrl: pricewise,
-    theme: "btn-back-red",
-    name: "XR based Ecommerce App",
-    description: "XR - ",
-    link: "https://github.com/Ayush-2001-Dhanraj/xrEcommerce",
+    iconUrl: work,
+    theme: "bg-gradient-to-r from-blue-100 via-blue-300 to-yellow-200",
+    name: "Tasks - Management App",
+    description:
+      "Currently under development - Project vision is to create a Jira inspired tasks managemnt app from scratch without any external packages.",
+    link: "https://github.com/Ayush-2001-Dhanraj/Tasks",
   },
   {
-    iconUrl: threads,
-    theme: "btn-back-green",
-    name: "Full Stack Threads Clone",
+    iconUrl: airbnb,
+    theme: "bg-gradient-to-r from-blue-200 via-blue-400 to-yellow-300",
+    name: "Airbnb Clone App",
     description:
-      'Created a full-stack replica of the popular discussion platform "Threads," enabling users to post and engage in threaded conversations.',
-    link: "https://github.com/adrianhajdin/threads",
+      "Currently under development - landmark project showcasing Native mobile app development skills inspired from Airbnb.",
+    link: "https://github.com/Ayush-2001-Dhanraj/airbnb-app",
   },
   {
-    iconUrl: car,
-    theme: "btn-back-blue",
-    name: "Car Finding App",
+    iconUrl: dog,
+    theme: "bg-gradient-to-r from-blue-300 via-blue-500 to-yellow-400",
+    name: "City Runner Game",
     description:
-      "Designed and built a mobile app for finding and comparing cars on the market, streamlining the car-buying process.",
-    link: "https://github.com/adrianhajdin/project_next13_car_showcase",
+      "Mr. Doggu is here to save the day and destroy creatures of the night. Javascript Sprite aimations because super dogs are real.",
+    link: "https://vercel.com/ayush-2001-dhanraj/fcc-js-game-final-project",
   },
   {
-    iconUrl: snapgram,
-    theme: "btn-back-pink",
-    name: "Full Stack Instagram Clone",
+    iconUrl: food,
+    theme: "bg-gradient-to-r from-blue-400 via-blue-600 to-yellow-500",
+    name: "Food Recipe App",
     description:
-      "Built a complete clone of Instagram, allowing users to share photos and connect with friends in a familiar social media environment.",
-    link: "https://github.com/adrianhajdin/social_media_app",
+      "Your interactive recipe booklet now in your phone. Supported by TheMealDB inspired by my passion for food.",
+    link: "https://github.com/Ayush-2001-Dhanraj/food-recipe-app",
   },
   {
-    iconUrl: estate,
-    theme: "btn-back-black",
-    name: "Real-Estate Application",
+    iconUrl: notes,
+    theme: "bg-gradient-to-r from-blue-500 via-blue-700 to-yellow-600",
+    name: "Keeper App",
     description:
-      "Developed a web application for real estate listings, facilitating property searches and connecting buyers with sellers.",
-    link: "https://github.com/adrianhajdin/projects_realestate",
-  },
-  {
-    iconUrl: summiz,
-    theme: "btn-back-yellow",
-    name: "AI Summarizer Application",
-    description:
-      "App that leverages AI to automatically generate concise & informative summaries from lengthy text content, or blogs.",
-    link: "https://github.com/adrianhajdin/project_ai_summarizer",
+      "Notes app inspired by Google Keep for you all who always forget milk when shopping.",
+    link: "https://keeper-app-ruby-kappa.vercel.app/",
   },
 ];
