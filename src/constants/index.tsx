@@ -191,8 +191,16 @@ export const projects = [
     link: "https://vercel.com/ayush-2001-dhanraj/fcc-js-game-final-project",
   },
   {
-    iconUrl: food,
+    iconUrl: work,
     theme: "bg-gradient-to-r from-blue-400 via-blue-600 to-yellow-500",
+    name: "Portfolio",
+    description:
+      "This very site - we are living in a simulation. Bird, plane, and land are the starter. ThreeJS the framework you are.",
+    link: "https://vercel.com/ayush-2001-dhanraj/3d-portfolio-demo",
+  },
+  {
+    iconUrl: food,
+    theme: "bg-gradient-to-r from-blue-500 via-blue-700 to-yellow-600",
     name: "Food Recipe App",
     description:
       "Your interactive recipe booklet now in your phone. Supported by TheMealDB inspired by my passion for food.",
@@ -200,7 +208,7 @@ export const projects = [
   },
   {
     iconUrl: notes,
-    theme: "bg-gradient-to-r from-blue-500 via-blue-700 to-yellow-600",
+    theme: "bg-gradient-to-r from-blue-600 via-blue-800 to-yellow-700",
     name: "Keeper App",
     description:
       "Notes app inspired by Google Keep for you all who always forget milk when shopping.",
