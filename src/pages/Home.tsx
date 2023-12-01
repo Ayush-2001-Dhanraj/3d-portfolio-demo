@@ -36,7 +36,7 @@ function Home() {
     const islandRotation = [0.1, 4.7, 0];
 
     if (window.innerWidth < 768) {
-      islandScale = [0.9, 0.9, 0.9];
+      islandScale = [1.1, 1.1, 1.1];
     } else {
       islandScale = [2, 2, 2];
     }
@@ -51,7 +51,7 @@ function Home() {
       planeScale = [1.5, 1.5, 1.5];
       planePosition = [0, -1.5, 0];
     } else {
-      planeScale = [3, 3, 3];
+      planeScale = [4, 4, 4];
       planePosition = [0, -4, -4];
     }
 
