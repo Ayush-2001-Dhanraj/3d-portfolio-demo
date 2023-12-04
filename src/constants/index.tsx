@@ -171,7 +171,7 @@ export const projects = [
     theme: "bg-gradient-to-r from-blue-100 via-blue-300 to-yellow-200",
     name: "Tasks - Management App",
     description:
-      "Currently under development - Project vision is to create a Jira inspired tasks managemnt app from scratch without any external packages.",
+      "Currently under development - Envision crafting a Jira-inspired task management app entirely from scratch, devoid of external packages or dependencies.",
     link: "https://github.com/Ayush-2001-Dhanraj/Tasks",
   },
   {
@@ -179,15 +179,15 @@ export const projects = [
     theme: "bg-gradient-to-r from-blue-200 via-blue-400 to-yellow-300",
     name: "Airbnb Clone App",
     description:
-      "Currently under development - landmark project showcasing Native mobile app development skills inspired from Airbnb.",
+      "Currently under development - Showcase native mobile app development expertise with a cutting-edge project inspired by Airbnb.",
     link: "https://github.com/Ayush-2001-Dhanraj/airbnb-app",
   },
   {
     iconUrl: dog,
     theme: "bg-gradient-to-r from-blue-300 via-blue-500 to-yellow-400",
-    name: "City Runner Game",
+    name: "Doggulicious Nightscape",
     description:
-      "Mr. Doggu is here to save the day and destroy creatures of the night. Javascript Sprite aimations because super dogs are real.",
+      "Meet Mr. Doggu, the nocturnal nemesis, on a mission to vanquish creatures of the night through mesmerizing JavaScript sprite animations. Because in the realm of super dogs, reality takes a whimsical twist.",
     link: "https://vercel.com/ayush-2001-dhanraj/fcc-js-game-final-project",
   },
   {
@@ -195,15 +195,15 @@ export const projects = [
     theme: "bg-gradient-to-r from-blue-400 via-blue-600 to-yellow-500",
     name: "Portfolio",
     description:
-      "This very site - we are living in a simulation. Bird, plane, and land are the starter. ThreeJS the framework you are.",
+      "Discover my 3D developer portfolio powered by ThreeJS. Dive into dynamic 3D models showcasing my projects and explore my professional journey through a unique web resume.",
     link: "https://vercel.com/ayush-2001-dhanraj/3d-portfolio-demo",
   },
   {
     iconUrl: food,
     theme: "bg-gradient-to-r from-blue-500 via-blue-700 to-yellow-600",
-    name: "Food Recipe App",
+    name: "Mobile Flavor Hub: Culinary Delights by TheMealDB",
     description:
-      "Your interactive recipe booklet now in your phone. Supported by TheMealDB inspired by my passion for food.",
+      "Experience the ultimate culinary convenience with our interactive recipe booklet on your phone. Fueled by passion and powered by TheMealDB, this project transforms your mobile device into a gastronomic journey.",
     link: "https://github.com/Ayush-2001-Dhanraj/food-recipe-app",
   },
   {
@@ -211,7 +211,7 @@ export const projects = [
     theme: "bg-gradient-to-r from-blue-600 via-blue-800 to-yellow-700",
     name: "Keeper App",
     description:
-      "Notes app inspired by Google Keep for you all who always forget milk when shopping.",
+      "Your virtual notepad, drawing inspiration from Google Keep, designed for those who never want to forget the milk again during shopping. Stay organized effortlessly!",
     link: "https://keeper-app-ruby-kappa.vercel.app/",
   },
 ];
