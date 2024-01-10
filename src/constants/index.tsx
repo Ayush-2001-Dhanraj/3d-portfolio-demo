@@ -188,7 +188,7 @@ export const projects = [
     name: "Doggulicious Nightscape",
     description:
       "Meet Mr. Doggu, the nocturnal nemesis, on a mission to vanquish creatures of the night through mesmerizing JavaScript sprite animations. Because in the realm of super dogs, reality takes a whimsical twist.",
-    link: "https://vercel.com/ayush-2001-dhanraj/fcc-js-game-final-project",
+    link: "https://fcc-js-game-final-project.vercel.app/",
   },
   {
     iconUrl: work,
@@ -196,7 +196,7 @@ export const projects = [
     name: "Portfolio",
     description:
       "Discover my 3D developer portfolio powered by ThreeJS. Dive into dynamic 3D models showcasing my projects and explore my professional journey through a unique web resume.",
-    link: "https://vercel.com/ayush-2001-dhanraj/3d-portfolio-demo",
+    link: "https://3d-portfolio-demo-delta.vercel.app/",
   },
   {
     iconUrl: food,
